@@ -1,5 +1,7 @@
 package org.datastructures.arraylists;
 
+import java.util.Arrays;
+
 public class MyArrayList<T> {
     private Object[] elements;
     private int size;
@@ -91,6 +93,16 @@ public class MyArrayList<T> {
         System.out.println(list.get(1)); // 99
 
         System.out.println("Size: " + list.size()); // 2
+
+
+        //Theory
+        int[] intArray; // This is a declaration
+        intArray = new int[3]; // This is instantiation
+        intArray[0] = 1;
+        intArray[1] = 2;
+        intArray[2] = 3;
+
+        System.out.println(Arrays.toString(intArray));
     }
 
 
