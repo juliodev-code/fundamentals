@@ -103,6 +103,9 @@ public class MyArrayList<T> {
         intArray[2] = 3;
 
         System.out.println(Arrays.toString(intArray));
+
+        String allTogetherDeclaration[] = {"a", "b", "c"};
+        System.out.println(Arrays.toString(allTogetherDeclaration));
     }
 
 
