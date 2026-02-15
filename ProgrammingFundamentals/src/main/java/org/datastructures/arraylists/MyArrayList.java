@@ -1,5 +1,6 @@
 package org.datastructures.arraylists;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyArrayList<T> {
@@ -106,6 +107,18 @@ public class MyArrayList<T> {
 
         String allTogetherDeclaration[] = {"a", "b", "c"};
         System.out.println(Arrays.toString(allTogetherDeclaration));
+
+        ArrayList<String> stringList = new ArrayList<String>(Arrays.asList("A", "B", "C", "D","E"));
+
+        for(String element: stringList){
+            if(element.equals("E")){
+                System.out.println("Element found");
+                break;
+            }
+        }
+
+        int indexFound = stringList.indexOf("E");
+        System.out.println("Element found at index:" + indexFound);
     }
 
 

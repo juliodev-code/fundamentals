@@ -86,6 +86,19 @@ public class LinkedList {
         System.out.println("null");
     }
 
+    public void reverse(){
+        Node prev = null;
+        Node curr = head;
+
+        while (curr != null) {
+            Node next = curr.next; // save
+            curr.next = prev;          // reverse
+            prev = curr;               // move prev
+            curr = next;               // move curr
+        }
+        head = prev;
+    }
+
     static void main() {
         LinkedList lists = new LinkedList();
         lists.add(10);
@@ -103,6 +116,9 @@ public class LinkedList {
         System.out.println("Does it contain 30? " + lists.contains(30));
 
         System.out.println("List size: " + lists.size());
+
+        lists.reverse();
+        lists.printList();
 
     }
 }
