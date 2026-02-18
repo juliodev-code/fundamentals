@@ -1,5 +1,10 @@
 package org.example.isp;
 
+/**
+ * The Rule: No client should be forced to depend on methods it does not use.
+ * The Smell: A SmartDevice interface that forces a SimpleLightbulb to implement a connectToWiFi() method.
+ * The Java Fix: Split "fat" interfaces into smaller, specific ones.
+ */
 public class InterfaceSegregationPrinciple {
 
     //we declare the different capabilities that out classes can implement

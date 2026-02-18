@@ -1,5 +1,10 @@
 package org.example.lsp;
 
+/**
+ * The Rule: Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.
+ * The Smell: A Penguin class inherits from Bird, but the fly() method throws an UnsupportedOperationException.
+ * The Java Fix: If a subclass can’t do what the parent does, they shouldn't share that specific parent. Use more granular interfaces.
+ */
 public class LiskovSubstitutionPrinciple {
 
     //made a good abstraction for no find not implemented behaviors

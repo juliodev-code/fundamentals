@@ -7,3 +7,13 @@
 | **L** | **Liskov Substitution Principle (LSP)** | Subtypes must be **substitutable** for their base types. Derived classes should not break the behavior expected from the base class. | - Ensures reliable inheritance hierarchies. <br> - Promotes polymorphism without side effects. <br> - Example: A subclass of `Bird` that cannot fly should not override a `fly()` method from `Bird` — it breaks expectations. |
 | **I** | **Interface Segregation Principle (ISP)** | Clients should not be forced to depend on **interfaces they do not use**. It’s better to have many small, specific interfaces than one large, general-purpose one. | - Prevents implementing unnecessary methods. <br> - Encourages cleaner, modular design. <br> - Example: Separate `Printable` and `Scannable` interfaces instead of one bulky `Machine` interface. |
 | **D** | **Dependency Inversion Principle (DIP)** | High-level modules should not depend on low-level modules. Both should depend on **abstractions** (interfaces). Abstractions should not depend on details; details should depend on abstractions. | - Promotes loose coupling. <br> - Simplifies testing (mocking dependencies). <br> - Example: Injecting a `DatabaseService` interface instead of creating a `MySQLDatabase` object directly inside a class. |
+
+S (SRP): Give the class one job.
+
+O (OCP): Grow by incrementing (adding files), not editing.
+
+L (LSP): Don't break the parent's promises in a subclass.
+
+I (ISP): Keep interfaces classified and lean.
+
+D (DIP): Depend on interfaces, not concrete classes (Plug & Play).

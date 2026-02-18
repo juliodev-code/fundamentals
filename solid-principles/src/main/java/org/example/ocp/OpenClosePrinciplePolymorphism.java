@@ -1,5 +1,10 @@
 package org.example.ocp;
 
+/**
+ * The Rule: Software entities should be open for extension, but closed for modification.
+ * The Smell: You use a massive switch statement or if-else chain to check for object types (e.g., if (shape == "Circle")).
+ * The Java Fix: Use Interfaces or Abstract Classes.
+ */
 public class OpenClosePrinciplePolymorphism {
 
     //Using open close principle using "Polymorphism"
