@@ -2,7 +2,7 @@ package org.datastructures.linkedlists;
 
 public class SingleLinkedList {
 
-    class Node {
+    public class Node {
         public int value;
         public Node next;
     }
